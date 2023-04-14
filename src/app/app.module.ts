@@ -7,9 +7,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SobremiComponent } from './sobremi/sobremi.component';
 import { LoginComponent } from './modals/login/login.component';
 import { RedesComponent } from './redes/redes.component';
+import { BannerComponent } from './banner/banner.component';
+import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/educacion.component';
-import { SkillComponent } from './skills/skill.component';
-import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
+import { HardysoftskillsComponent } from './hardysoftskills/hardysoftskills.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { SoftSkillsComponent } from './soft-skills/soft-skills.component';
     SobremiComponent,
     LoginComponent,
     RedesComponent,
+    BannerComponent,
+    ExperienciaComponent,
     EducacionComponent,
-    SkillComponent,
-    SoftSkillsComponent
+    HardysoftskillsComponent
   ],
   imports: [
     BrowserModule,
