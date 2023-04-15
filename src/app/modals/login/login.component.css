@@ -1,0 +1,60 @@
+/*modal*/
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  color:azure;
+
+}
+
+.modal-content{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color:#0f2f4f;
+  pointer-events: auto;
+  background-color: #032649;
+  background-clip: padding-box;
+  border:1px  solid;
+  border-radius: 0.5rem;
+  outline: 0;
+}
+
+.modal-title{
+  align-content: center;
+}
+
+.btn-close{
+    --bs-btn-close-color: #fff;
+    --bs-btn-close-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e);
+    --bs-btn-close-opacity: 3;
+}
+
+.modal-body{
+  color:azure;
+}
+
+
+
+.col-sm-10{
+  color:azure;
+}
+
+.col-sm-10{
+  margin:1rem;
+}
+
+.btn.btn-primary{
+  --bs-btn-bg: rgb(7, 22, 107);
+}
+
+.btn-outline-dark {
+  --bs-btn-border-color: none;
+  --bs-btn-hover-bg: rgb(26, 18, 121);
+  --bs-btn-active-bg: rgb(0, 251, 255);
+}
+
+
+

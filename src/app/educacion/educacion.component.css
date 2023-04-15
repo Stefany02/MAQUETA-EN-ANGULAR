@@ -26,7 +26,6 @@ section#Educacion{
   flex-direction: column;
   align-items: center;
   justify-content:center;
-  background-color: rgb(12, 19, 54);
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -40,4 +39,13 @@ h2.educacion{
   margin-top: 4rem;
 }
 
-
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-block-end: 3rem;
+}

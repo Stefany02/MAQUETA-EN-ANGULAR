@@ -31,7 +31,20 @@ div#skill{
   align-items: center;
   flex-wrap: wrap;
   gap: 80px;
-  overflow:hidden;}
+  overflow:hidden;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+  margin-block-end: 3rem;
+}
+
+h2.skill{
+  color:#0afbfb;
+  -webkit-text-stroke: 1px hsl(243, 28%, 14%);
+
+}
 
 
 .caja {
@@ -62,17 +75,12 @@ div#skill{
   right: -1px;
   width: 20px;
   height: 100%;
-  background: #02146b;
+  background: #0d084a;
   filter: blur(1px);
   z-index: 1;
 }
 
-.caja .shadow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #f10303;
-}
+/*saque caja shadow*/
 
 .caja .shadow::before {
   content: '';
@@ -81,7 +89,7 @@ div#skill{
   left: calc(100% + 5px);
   width: 100%;
   height: 200%;
-  background: linear-gradient(rgba(2, 4, 134, 0.467), transparent);
+  background: linear-gradient(rgba(8, 9, 64, 0.455), transparent);
   transform: skewX(45deg);
 }
 
@@ -89,10 +97,10 @@ div#skill{
   content: '';
   position: absolute;
   bottom: -200%;
-  left: calc(100% + 15px);
+  left: calc(100% + 30px);
   width: 100%;
   height: 200%;
-  background: linear-gradient(rgba(1, 3, 94, 0.467), transparent);
+  background: linear-gradient(rgba(6, 19, 52, 0.374), transparent);
   transform: skewX(45deg);
 }
 
@@ -100,7 +108,7 @@ div#skill{
   position: relative;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#051cc6, #070491);
+  background: linear-gradient(#081260, #222164);
   box-shadow: 5px 5px 5px rgba(0, 27, 94, 0.964),
     15px 15px 15px rgba(21, 0, 92, 0.851),
     20px 20px 20px #04014a8b,
@@ -122,12 +130,13 @@ div#skill{
   content: attr(data-text);
   position: absolute;
   inset: 20px;
-  background: #05fbf7;
+  background: #032ff7;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color:#f6feff;
+  -webkit-text-stroke: 1px hsla(240, 32%, 91%, 0.877);
   font-size: 1.75rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
@@ -145,12 +154,12 @@ div#skill{
   height: 100%;
   fill: transparent;
   stroke-width: 3;
-  stroke: rgb(31, 214, 238);
+  stroke: rgba(6, 26, 252, 0.811);
   transform: translate(5px, 5px);
 }
 
 .caja .content .percent svg circle:nth-child(2) {
-  stroke: #ff0202ef;
+  stroke: #0affef;
   stroke-dasharray: 440;
   stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
   opacity: 0;
@@ -191,7 +200,7 @@ div#skill{
   transform: translateX(-50%);
   width: 14px;
   height: 14px;
-  background: #000000;
+  background: #1d2722;
   border-radius: 50%;
 }
 
@@ -203,15 +212,9 @@ div#skill{
   animation-delay: 2.5s;
 }
 
-.caja .content .number h2 {
-  font-size: 2.5rem;
-  color: #960202;
-}
+/*quite content number h2*/
 
-.caja .content .number h2 span {
-  font-weight: 300;
-  font-size: 1.5rem;
-}
+/*quite content number h2 span*/
 
 
 h1.skill{
@@ -219,12 +222,10 @@ h1.skill{
   font-size: 3rem;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color:aqua;
-  -webkit-text-stroke: 1px hsl(0, 0%, 0%);
+  -webkit-text-stroke: 1px hsl(60, 3%, 6%);
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 73, 132, 0.992);
 }
-
-

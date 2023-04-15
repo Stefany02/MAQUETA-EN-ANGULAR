@@ -44,3 +44,8 @@ i.fa-solid.fa-user-lock.fa-2xl.text-white:hover{
   --bs-text-opacity: 1;
   color:#68fc05 !important;
 }
+
+i.fa-regular.fa-circle-left.fa-2xl.text-white:hover{
+  --bs-text-opacity: 1;
+  color: #3eff04 !important;
+}

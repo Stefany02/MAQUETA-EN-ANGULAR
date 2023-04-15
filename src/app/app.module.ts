@@ -11,6 +11,13 @@ import { BannerComponent } from './banner/banner.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { HardysoftskillsComponent } from './hardysoftskills/hardysoftskills.component';
+import { ErrorComponent } from './error/error.component';
+import { IntroComponent } from './intro/intro.component';
+import { NavbarDashboardComponent } from './navbar-dashboard/navbar-dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { RedesdashboardComponent } from './redesdashboard/redesdashboard.component';
+import { BannerdashboardComponent } from './bannerdashboard/bannerdashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +29,13 @@ import { HardysoftskillsComponent } from './hardysoftskills/hardysoftskills.comp
     BannerComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HardysoftskillsComponent
+    HardysoftskillsComponent,
+    ErrorComponent,
+    IntroComponent,
+    NavbarDashboardComponent,
+    DashboardComponent,
+    RedesdashboardComponent,
+    BannerdashboardComponent,
   ],
   imports: [
     BrowserModule,
