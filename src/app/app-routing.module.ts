@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ErrorComponent } from './error/error.component';
-import { IntroComponent } from './intro/intro.component';
 
 const routes: Routes = [
-  {path:'intro', component:IntroComponent},
+  {path:'portfolio', component:PortfolioComponent},
   {path:'dashboard', component:DashboardComponent},
-  {path:'',redirectTo:'/intro',pathMatch:'full'},
+  {path:'',redirectTo:'/portfolio',pathMatch:'full'},
   {path:'**', component:ErrorComponent}
 ];
 
