@@ -13,8 +13,10 @@ section.banner{
   background-repeat: no-repeat;
 }
 
-h1.text-white.text-center.Bienvenida{
-  padding-top: 15rem;
+.bienvenida{
+  padding-top: 15rem !important;
+  color:azure;
+  margin-left: 40rem;
 }
 
 

@@ -19,9 +19,8 @@ h1.Educacion{
   margin-top: 3rem;
 }
 
-section#Educacion{
+section#Institucion{
   margin: auto;
-  columns: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;

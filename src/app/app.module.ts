@@ -17,6 +17,7 @@ import { RedesdashboardComponent } from './redesdashboard/redesdashboard.compone
 import { BannerdashboardComponent } from './bannerdashboard/bannerdashboard.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
