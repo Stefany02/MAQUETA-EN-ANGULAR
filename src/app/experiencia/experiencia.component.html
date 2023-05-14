@@ -1,55 +1,20 @@
 <h1 class="Curriculum">Experiencia</h1>
 
-  <section id="Experiencia" class="about">
-    <div class="container text-center">
-        <div class="row">
-          <div class="col-3">
-            <img src="assets/img/logo Jenic.jpg" width="150px" height="140px">
-          </div>
-          <div class="col-6 mt-4">
-            <h3 class="Jenic">
-              <h2> Administrativa Jenic Seguridad S.R.L 2022 </h2>
-             <ul style="font-size: x-large;"><li>Control de legajos de empleados</li>
-              <li>Seguimiento de cheques</li>
-              <li>Liquidación de sueldos</li>
-            </ul>
-            </h3>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-3">
-            <img src="assets/img/dyd.jpg" width="150px" height="140px">
-          </div>
-          <div class="col-6 mt-4">
-            <h3 class="DyD">
-            <h2>DyD_Distribuidorasanitaria 2020-2022</h2>
-            <ul style="font-size: x-large;"><li>Armado de paquetes Mercado Libre</li>
-              <li>Control de ordenes de compra al exterior</li>
-            <li>Armado de documentación de importación</li>
+<section id="Experiencia" class="about">
+  <div class="container text-center">
+    <div *ngFor="let experiencia of experiencias" class="row">
+      <div class="col-3">
+        <img [src]="experiencia.imagen" [alt]="experiencia.empresa" width="150px" height="140px">
+      </div>
+      <div class="col-6 mt-4">
+        <h3 class="{{ experiencia.clase }}">
+          <h2> {{ experiencia.empresa }} {{ experiencia.fecha }} </h2>
+          <ul style="font-size: x-large;">
+            <li *ngFor="let tarea of experiencia.tareas">{{ tarea }}</li>
           </ul>
-          </h3>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-3">
-            <img src="assets/img/BacoClub-logo.jpg" alt="150px" height="140px">
-          </div>
-          <div class="col-6 mt-4">
-          <h3 class="Baco">
-            <h2>Baco Club de Vinos 2019</h2>
-            <ul style="font-size: x-large;"><li>Dotes de negociación</li>
-              <li>Comunicación asertiva</li>
-            <li>Captación de nuevos clientes</li>
-          </ul>
-          </h3>
-          </div>
-        </div>
+        </h3>
+      </div>
     </div>
-   </section>
-
-
-
+  </div>
+</section>
 

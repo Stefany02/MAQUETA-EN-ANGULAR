@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SobremiComponent } from './sobremi/sobremi.component';
 import { RedesComponent } from './redes/redes.component';
-import { BannerComponent } from './banner/banner.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { HardysoftskillsComponent } from './hardysoftskills/hardysoftskills.component';
@@ -18,6 +17,8 @@ import { BannerdashboardComponent } from './bannerdashboard/bannerdashboard.comp
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BannerComponent } from './banner/banner.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
 
 
 @NgModule({
@@ -26,7 +27,6 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     SobremiComponent,
     RedesComponent,
-    BannerComponent,
     ExperienciaComponent,
     EducacionComponent,
     HardysoftskillsComponent,
@@ -37,6 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     BannerdashboardComponent,
     PortfolioComponent,
     IniciarSesionComponent,
+    BannerComponent,
+    ProyectosComponent,
   ],
   imports: [
     BrowserModule,

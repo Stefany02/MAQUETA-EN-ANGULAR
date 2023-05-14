@@ -1,8 +1,14 @@
-{"banner":{
-  "frase":"Bienvenidos",
-  "name": "Soy Stefany",
-"position": "Desarrollador full stack Jr."
+{
+  "banner":{
+  "titulo":"Bienvenidos",
+  "subtitulo": "Soy Stefany",
+"descripcion": "Desarrollador full stack Jr."
 },
+"miPortfolio":[
+  "Proyecto 1",
+  "Proyecto 2",
+  "Proyecto 3"
+],
 "experiencia":[{
    "name": "Jenic",
    "img": "https://scontent.faep14-3.fna.fbcdn.net/v/t39.30808-6/294848494_472308068231433_932743041961022694_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=mrnVJV1mTPwAX8SE0S7&_nc_ht=scontent.faep14-3.fna&oh=00_AfDr5LgdVzHh_Dbq0ofMhure2ggEusSODNet_Qc891_EfA&oe=6457A3B0",

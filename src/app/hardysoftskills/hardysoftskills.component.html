@@ -1,106 +1,41 @@
  <!--SKILLS-->
  <h1 class="skill">Skills</h1>
- <section>
- <div id="skill" class="about">
-   <div class="progreso1">
-     <div class="caja">
-       <div class="shadow"></div>
-       <div class="content">
-         <div class="text-center">
-           <h2 class="skill">Liderazgo</h2>
-         </div>
-         <div class="percent" data-text="89%" style="--num: 89">
-           <div class="dot"></div>
-           <svg>
-             <circle cx="70" cy="70" r="70"></circle>
-             <circle cx="70" cy="70" r="70"></circle>
-           </svg>
-         </div>
-       </div>
-     </div>
+<section>
+  <div id="skill" class="about">
+    <div class="progreso1">
+      <div class="caja" *ngFor="let skill of skills.slice(0, 3)">
+        <div class="shadow"></div>
+        <div class="content">
+          <div class="text-center">
+            <h2 class="skill">{{ skill.name }}</h2>
+          </div>
+          <div class="percent" [attr.data-text]="skill.value + '%'" [style.--num]="skill.value">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
 
-     <div class="caja">
-       <div class="shadow"></div>
-       <div class="content">
-         <div class="text-center">
-           <h2 class="skill">Inteligencia Social</h2>
-         </div>
-         <div class="percent" data-text="85%" style="--num: 85">
-           <div class="dot"></div>
-           <svg>
-             <circle cx="70" cy="70" r="70"></circle>
-             <circle cx="70" cy="70" r="70"></circle>
-           </svg>
-         </div>
-       </div>
-     </div>
-
-     <div class="caja">
-       <div class="shadow"></div>
-       <div class="content">
-         <div class="text-center">
-           <h2 class="skill">Autogestión</h2>
-         </div>
-         <div class="percent" data-text="86%" style="--num: 86">
-           <div class="dot"></div>
-           <svg>
-             <circle cx="70" cy="70" r="70"></circle>
-             <circle cx="70" cy="70" r="70"></circle>
-           </svg>
-         </div>
-       </div>
-     </div>
-   </div>
-
-   <div class="progreso2">
-     <div class="caja">
-       <div class="shadow"></div>
-       <div class="content">
-         <div class="text-center">
-           <h2 class="skill" >Idiomas</h2>
-         </div>
-         <div class="percent" data-text="50%" style="--num: 50">
-           <div class="dot"></div>
-           <svg>
-             <circle cx="70" cy="70" r="70"></circle>
-             <circle cx="70" cy="70" r="70"></circle>
-           </svg>
-         </div>
-       </div>
-     </div>
-
-     <div class="caja">
-       <div class="shadow"></div>
-       <div class="content">
-         <div class="text-center">
-           <h2 class="skill"> Pensamiento Analítico</h2>
-         </div>
-         <div class="percent" data-text="80%" style="--num: 80">
-           <div class="dot"></div>
-           <svg>
-             <circle cx="70" cy="70" r="70"></circle>
-             <circle cx="70" cy="70" r="70"></circle>
-           </svg>
-         </div>
-       </div>
-     </div>
-
-     <div class="caja">
-       <div class="shadow"></div>
-       <div class="content">
-         <div class="text-center">
-           <h2 class="skill">Programación</h2>
-         </div>
-         <div class="percent" data-text="30%" style="--num: 30">
-           <div class="dot"></div>
-           <svg>
-             <circle cx="70" cy="70" r="70"></circle>
-             <circle cx="70" cy="70" r="70"></circle>
-           </svg>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
+    <div class="progreso2">
+      <div class="caja" *ngFor="let skill of skills.slice(3)">
+        <div class="shadow"></div>
+        <div class="content">
+          <div class="text-center">
+            <h2 class="skill">{{ skill.name }}</h2>
+          </div>
+          <div class="percent" [attr.data-text]="skill.value + '%'" [style.--num]="skill.value">
+            <div class="dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
-

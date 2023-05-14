@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { PortfolioService } from '../servicios/portfolio.service';
 
 @Component({
@@ -6,16 +6,9 @@ import { PortfolioService } from '../servicios/portfolio.service';
   templateUrl: './banner.component.html',
   styleUrls: ['./banner.component.css']
 })
-export class BannerComponent implements OnInit {
-  miPortfolio:any;
-  constructor(private datosPortfolio:PortfolioService) {}
+export class BannerComponent {
+  bienvenida = 'Bienvenidos';
+  saludo = 'Hola, soy Stefany Donnet';
+  contenido = 'Desarrollador full stack jr.';
 
-  ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data =>{
-      console.log("banner",data);
-      this.miPortfolio=data.BannerComponent;
-    });
-  }
-
-  }
-
+}
